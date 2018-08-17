@@ -1,0 +1,62 @@
+.cardAnimation-appear {
+    opacity: 0.01;
+    transform: rotate(20deg);
+}
+
+.cardAnimation-appear.cardAnimation-appear-active {
+    opacity: 1;
+    transition: all 1s ease-in;
+}
+
+.BookCard {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1.1s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.Modal {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    background-color: papayawhip;
+    align-items: center;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.64);
+}
+
+/* .BookCard:hover {
+  padding-bottom: 50;
+  animation-name: cardHover;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.1s;
+
+}
+@keyframes cardHover {
+  0% {
+      padding-bottom: 0;
+  }
+  100% {
+      padding-bottom: 50;
+  }
+} */
+
+ 
