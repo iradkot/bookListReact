@@ -1,6 +1,6 @@
 const bookList = (state = [], action) => {
     switch (action.type) {
-        case 'SET_BOOKS': 
+        case 'SET_BOOKS':
         return action.bookList;
       case 'ADD_Book':
         return [
@@ -12,10 +12,16 @@ const bookList = (state = [], action) => {
           }
         ];
       case 'EDIT_BOOK':
-        return state.map(book =>
-          (book.id === action.id)
-            ? {...book, ...action.fields}
-            : book
+          console.log('Editting Book :', action);
+        return state.map(book => {
+            if(book.id === action.id){
+                console.log('book',book, action);
+                return ({...book, volumeInfo: {...book.volumeInfo, ...action.fields}});
+            }
+            else {
+                return book
+            }
+        }
         );
         case 'DELETE_BOOK':
             return state.filter( (book) => {

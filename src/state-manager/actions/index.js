@@ -1,6 +1,5 @@
-let bookList = [];
 
-export const setBooks = (bookList = bookList) => ({
+export const setBooks = (bookList = []) => ({
     type: "SET_BOOKS",
     bookList
 })
@@ -28,7 +27,7 @@ export const editBook = (id, fields) => ({
     type: 'EDIT_BOOK',
     id,
     fields
-})
+});
 
 export const VisibilityFilters = {
     SHOW_ALL: 'SHOW_ALL',

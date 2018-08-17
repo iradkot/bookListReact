@@ -3,27 +3,26 @@ import PropTypes from 'prop-types';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
-import Input from '@material-ui/core/Input';
-import InputLabel from '@material-ui/core/InputLabel';
+
+
 import EditIcon from '@material-ui/icons/Edit';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import withStyles from '@material-ui/core/styles/withStyles';
 //general funcs:
-import {authorsArrToString, googleBooksDatesToString} from'../../generalFuncs/generalFuncs';
+import {authorsArrToString} from'../../generalFuncs/generalFuncs';
 import {checkIfValidDate} from "../../generalFuncs/validationFuncs";
 
 
 
 function SignIn(props) {
     const { classes } = props;
-    const {authorsEdit, titleEdit, onChangeTitle, onChangeAuthors, fieldsValidation, validateField} = props.props;
+    const {authorsEdit, titleEdit, onChangeTitle, onChangeAuthors, onChangeDate, fieldsValidation, validateField} = props.props;
     checkIfValidDate(props.props.publishedDate);
     let titleError = fieldsValidation['title'],
         authorsErr = fieldsValidation['authors'],
         publishedDateErr = fieldsValidation['publishedDate'];
-    console.log('titleError, authorsErr, publishedDateErr',titleError, authorsErr, publishedDateErr)
     return (
         <React.Fragment>
             <main className={classes.layout}>
@@ -45,7 +44,7 @@ function SignIn(props) {
                                 }}
                                 onChange={onChangeTitle}
                                 onBlur={()=>validateField('title')}
-                                error={titleError}
+                                error={titleError? true: false}
                                 helperText={titleError? titleError : ''}
 
 
@@ -56,27 +55,31 @@ function SignIn(props) {
                                 id="authors"
                                 label="Authors name display"
                                 type="text"
-                                defaultValue={authorsArrToString(props.props.authorsEdit)}
+                                defaultValue={authorsArrToString(authorsEdit)}
                                 className={classes.textField}
                                 InputLabelProps={{
                                     shrink: true,
                                 }}
                                 onChange={onChangeAuthors}
                                 onBlur={()=>validateField('authors')}
-                                error={authorsErr}
+                                error={authorsErr? true: false}
                                 helperText={authorsErr? authorsErr : ''}
                             />
                         </FormControl>
                         <FormControl margin="normal" required fullWidth>
                             <TextField
                                 id="publishedDate"
-                                label="publishedDate"
+                                label="Published Date"
                                 type="text"
                                 defaultValue={props.props.dateEdit}
                                 className={classes.textField}
                                 InputLabelProps={{
                                     shrink: true,
                                 }}
+                                onChange={onChangeDate}
+                                onBlur={()=>validateField('publishedDate')}
+                                error={publishedDateErr? true: false}
+                                helperText={publishedDateErr? publishedDateErr : ''}
                             />
                         </FormControl>
                         <Button

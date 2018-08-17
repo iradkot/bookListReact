@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import './BookList.css';
-import TextField from '@material-ui/core/TextField';
-import axios from 'axios';
 import BookListDumb from '../../components/BookListDumb';
 //redux
-import {addBook, setBooks} from '../../state-manager/actions'
+import {addBook} from '../../state-manager/actions'
 import { connect } from 'react-redux';
 
 
