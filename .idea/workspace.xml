@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99c60d78-8868-499e-bc36-8d641ed8f477" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,17 +17,19 @@
     <session id="687905496">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.32" value="1" />
+          <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.39" value="1" />
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.43" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Procfile" value="19" />
           <entry key="css" value="269" />
           <entry key="js" value="6630" />
         </counts>
@@ -39,10 +38,13 @@
         <counts>
           <entry key="CSS" value="269" />
           <entry key="JavaScript" value="6630" />
+          <entry key="PLAIN_TEXT" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="Procfile" value="1" />
+          <entry key="_netrc" value="1" />
           <entry key="css" value="10" />
           <entry key="js" value="50" />
           <entry key="ts" value="2" />
@@ -52,6 +54,7 @@
         <counts>
           <entry key="CSS" value="10" />
           <entry key="JavaScript" value="50" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="TypeScript" value="2" />
         </counts>
       </usages-collector>
@@ -63,11 +66,11 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/screens/BookCard/BookCard1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
+            <state relative-caret-position="2208">
               <caret line="100" column="29" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="29" />
               <folding>
                 <element signature="e#65#99#0" expanded="true" />
@@ -78,11 +81,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="92">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -99,8 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>validateField</find>
-      <find>submi</find>
       <find>set</find>
       <find>fieldsValidation</find>
       <find>error</find>
@@ -129,17 +139,20 @@
       <find>publishedDate</find>
       <find>SimpleBottomNavigation</find>
       <find>deleteBook</find>
+      <find>proccess</find>
+      <find>_netrc</find>
     </findStrings>
     <replaceStrings>
       <replace>BookListDumb</replace>
       <replace>'@material-ui/core</replace>
       <replace>EditIcon</replace>
       <replace>BottomNavigationComponent</replace>
+      <replace>process</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\עירד\Desktop\herolo\books_library\node_modules</dir>
-      <dir>C:\Users\עירד\Desktop\herolo\books_library</dir>
       <dir>C:\Users\עירד\Desktop\herolo\books_library\src</dir>
+      <dir>C:\Users\עירד\Desktop\herolo\books_library</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -168,6 +181,7 @@
         <option value="$PROJECT_DIR$/src/screens/BookCard/CardView.js" />
         <option value="$PROJECT_DIR$/src/screens/bookList/BookList.js" />
         <option value="$PROJECT_DIR$/server.js" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -252,12 +266,13 @@
       <workItem from="1534409416977" duration="17809000" />
       <workItem from="1534458368897" duration="14064000" />
       <workItem from="1534549131716" duration="7620000" />
-      <workItem from="1534595174319" duration="2949000" />
+      <workItem from="1534595174319" duration="4377000" />
+      <workItem from="1534609399945" duration="64000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47108000" />
+    <option name="totallyTimeSpent" value="48600000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -278,7 +293,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32885906" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32885906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -376,9 +391,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2915">
           <caret line="145" column="15" selection-start-line="145" selection-start-column="15" selection-end-line="145" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -407,10 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#471#515#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -418,11 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="62" column="46" lean-forward="true" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#133#184#0" expanded="true" />
-            <element signature="e#359#408#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -435,7 +438,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/screens/BookCard/BookCard1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
+        <state relative-caret-position="2208">
           <caret line="100" column="29" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="29" />
           <folding>
             <element signature="e#65#99#0" expanded="true" />
@@ -445,10 +448,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/_netrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="92">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" lean-forward="true" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
