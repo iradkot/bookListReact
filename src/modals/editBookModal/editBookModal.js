@@ -108,6 +108,7 @@ function SignIn(props) {
 const styles = theme => ({
     layout: {
         width: 'auto',
+        marginTop: theme.spacing.unit * 3,
         marginLeft: theme.spacing.unit * 3,
         marginRight: theme.spacing.unit * 3,
         [theme.breakpoints.up(400 + theme.spacing.unit * 3 * 2)]: {

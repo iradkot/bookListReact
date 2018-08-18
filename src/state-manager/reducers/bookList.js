@@ -12,10 +12,8 @@ const bookList = (state = [], action) => {
           }
         ];
       case 'EDIT_BOOK':
-          console.log('Editting Book :', action);
         return state.map(book => {
             if(book.id === action.id){
-                console.log('book',book, action);
                 return ({...book, volumeInfo: {...book.volumeInfo, ...action.fields}});
             }
             else {

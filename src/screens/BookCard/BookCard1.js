@@ -9,9 +9,11 @@ import './BookCard1.css';
 import {connect} from 'react-redux';
 import {addBook, editBook, deleteBook} from '../../state-manager/actions'
 import {authorsArrToString, isEmpty} from "../../generalFuncs/generalFuncs";
+//notifier
+import {openSnackbar} from "../../components/Notifier";
+import {checkIfValidDate} from "../../generalFuncs/validationFuncs";
 
 // import TodoList from '../components/TodoList'
-
 
 class BookCard1 extends Component {
     constructor(props) {
@@ -27,8 +29,7 @@ class BookCard1 extends Component {
             title: '',
             authors: '',
             publishedDate: ''
-        }
-        ;
+        };
 
         this.openModal = this.openModal.bind(this);
         this.afterOpenModal = this.afterOpenModal.bind(this);
@@ -61,30 +62,35 @@ class BookCard1 extends Component {
     }
 
     edit() {
-        let { fieldsValidation, title, authors, publishedDate } = this.state;
+        let {fieldsValidation, title, authors, publishedDate} = this.state;
         for (let item in this.state.fieldsValidation) {
             if (fieldsValidation[item]) {
                 return false;
             }
         }
         //check if to update field
-        let updatedFieldsObj ={};
+        let updatedFieldsObj = {};
         let shouldUpdate = false;
-        if(title !== this.props.title){
+        if (title !== this.props.title) {
             updatedFieldsObj.title = title;
             shouldUpdate = true;
         }
-        if(authorsArrToString(authors) !== authorsArrToString(this.props.authors)){
+        if (authorsArrToString(authors) !== authorsArrToString(this.props.authors)) {
             updatedFieldsObj.authors = authors;
             shouldUpdate = true;
         }
-        if(publishedDate !== this.props.publishedDate){
-            updatedFieldsObj.publishedDate = authors;
+        if (publishedDate !== this.props.publishedDate) {
+            updatedFieldsObj.publishedDate = publishedDate;
             shouldUpdate = true;
         }
-        if(shouldUpdate) {
-            let {id} = this.props;
+        if (shouldUpdate) {
+            console.log("BookCard should update:", this.props);
+            let {id, title} = this.props;
             this.props.editBook(id, updatedFieldsObj);
+            this.closeModal();
+            let chagedFields = Object.keys(updatedFieldsObj);
+
+            openSnackbar({ message:`Successfully changed book: ${title} following fields: ${chagedFields.map(key=> key + ' ')}`});
         }
         // if(title!==this.props.)
         // this.openModal();
@@ -110,12 +116,14 @@ class BookCard1 extends Component {
             this.validateField('title');
         });
     };
+
     onChangeAuthors(event) {
         let authors = event.target.value;
         this.setState({authors}, () => {
             this.validateField('authors');
         });
     };
+
     onChangeDate(event) {
         let publishedDate = event.target.value;
         this.setState({publishedDate}, () => {
@@ -146,14 +154,18 @@ class BookCard1 extends Component {
             case 'publishedDate':
                 if (publishedDate.length <= 0) {
                     fieldsValidation[field] = 'This field cannot be empty';
+                    break;
+                }
+                else if(!checkIfValidDate(new Date(publishedDate))){
+                    fieldsValidation[field] = 'Please fill in a valid Date'
                 }
                 else {
                     fieldsValidation[field] = false;
                 }
+                break;
         }
         this.setState({fieldsValidation});
     }
-
 
 
     render() {

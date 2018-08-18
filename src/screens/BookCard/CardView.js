@@ -8,9 +8,10 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Slide from '@material-ui/core/Slide';
 //modal
-import Modal from 'react-modal';
+// import Modal from 'react-modal';
+import Modal from '@material-ui/core/Modal';
+
 import ModalView from '../../modals/editBookModal/editBookModal'
-Modal.setAppElement('#root');
 
 
 export default (props) => {
@@ -21,14 +22,10 @@ export default (props) => {
         image = images[0].smallThumbnail;
     }
     return (
-        <Grid item xs={12} sm={6} lg={4} xl={3} key={id}>
+        <Grid item xs={12} sm={6} lg={4} xl={3} key={id} >
             <Modal
-                isOpen={props.modalIsOpen}
-                onAfterOpen={props.afterOpenModal}
-                onRequestClose={props.closeModal}
-                className="Modal"
-                overlayClassName="Overlay"
-                contentLabel="Minimal Modal Example"
+                open={props.modalIsOpen}
+                onClose={props.closeModal}
             >
                 <ModalView props={props}/>
             </Modal>
