@@ -9,6 +9,7 @@ const PORT = normalizePort(process.env.PORT || 5000);
 
 const app = express();
 const dev = app.get('env') !== 'production';
+const testss = app.get('env');
 
 if(!dev){
     app.disable('x-powered-by');
@@ -31,5 +32,6 @@ const server = createServer(app);
 
 server.listen(PORT, err => {
     if(err) throw err;
+    console.log(testss);
     console.log('Server started');
 });
