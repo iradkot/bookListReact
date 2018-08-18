@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="99c60d78-8868-499e-bc36-8d641ed8f477" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BottomNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BottomNavigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/service-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.d3b19344.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.d3b19344.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/bookList/BookList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/bookList/BookList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state-manager/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-manager/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state-manager/reducers/bookList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-manager/reducers/bookList.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,13 +39,13 @@
           <entry key="Procfile" value="19" />
           <entry key="css" value="269" />
           <entry key="gitignore" value="1" />
-          <entry key="js" value="9726" />
+          <entry key="js" value="9727" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="269" />
-          <entry key="JavaScript" value="9726" />
+          <entry key="JavaScript" value="9727" />
           <entry key="PLAIN_TEXT" value="20" />
         </counts>
       </usages-collector>
@@ -83,7 +85,7 @@
         <entry file="file://$PROJECT_DIR$/src/screens/BookCard/BookCard1.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
-              <caret line="96" column="5" lean-forward="true" selection-start-line="63" selection-start-column="4" selection-end-line="96" selection-end-column="5" />
+              <caret line="96" column="5" selection-start-line="63" selection-start-column="4" selection-end-line="96" selection-end-column="5" />
               <folding>
                 <element signature="e#65#99#0" expanded="true" />
                 <element signature="e#164#200#0" expanded="true" />
@@ -96,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/screens/bookList/BookList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="98" column="44" lean-forward="true" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
+            <state relative-caret-position="235">
+              <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
               <folding>
                 <element signature="e#569#618#0" expanded="true" />
               </folding>
@@ -108,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modals/addBookModal/addBookModal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
+            <state relative-caret-position="580">
               <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -121,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/src/generalFuncs/validationFuncs.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -174,8 +176,8 @@
       <find>validateField</find>
       <find>this.validateField('authors');</find>
       <find>defaultValue</find>
-      <find>addBook</find>
       <find>imageEdit</find>
+      <find>addBook</find>
       <find>onChangeImage</find>
     </findStrings>
     <replaceStrings>
@@ -379,12 +381,12 @@
       <workItem from="1534549131716" duration="7620000" />
       <workItem from="1534595174319" duration="4377000" />
       <workItem from="1534609399945" duration="2180000" />
-      <workItem from="1534614151158" duration="15941000" />
+      <workItem from="1534614151158" duration="16590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66657000" />
+    <option name="totallyTimeSpent" value="67306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -405,7 +407,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32885906" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32885906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -605,7 +607,7 @@
     <entry file="file://$PROJECT_DIR$/src/screens/BookCard/BookCard1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="96" column="5" lean-forward="true" selection-start-line="63" selection-start-column="4" selection-end-line="96" selection-end-column="5" />
+          <caret line="96" column="5" selection-start-line="63" selection-start-column="4" selection-end-line="96" selection-end-column="5" />
           <folding>
             <element signature="e#65#99#0" expanded="true" />
             <element signature="e#164#200#0" expanded="true" />
@@ -617,13 +619,13 @@
     <entry file="file://$PROJECT_DIR$/src/generalFuncs/validationFuncs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modals/addBookModal/addBookModal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
+        <state relative-caret-position="580">
           <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -633,8 +635,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/screens/bookList/BookList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="98" column="44" lean-forward="true" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
+        <state relative-caret-position="235">
+          <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
           <folding>
             <element signature="e#569#618#0" expanded="true" />
           </folding>

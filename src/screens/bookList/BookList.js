@@ -26,7 +26,7 @@ class BookList extends Component {
             bookList: [],
             count: 0,
             smallToBig: true, // for sorting
-            showAddBookModal: true
+            showAddBookModal: false
         }
         this.getBooks = this.getBooks.bind(this);
         this.toggleFilter = this.toggleFilter.bind(this);
