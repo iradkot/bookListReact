@@ -3,27 +3,34 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import AddBookIcon from '@material-ui/icons/AddBox';
+import FavoriteIcon from '@material-ui/icons/SortByAlphaTwoTone';
 
-// width: 500px;
-// border-radius: 5px;
-// margin-bottom: 5px;
-// background: #fafafa;
-// border-color: black;
-// border-width: 11px;
-
-const styles = {
+const styles = theme => ({
     root: {
-        width: 500,
-        marginBottom: 5,
-        backgroundColor: 'linear-gradient(to right bottom, #430089, #82ffa1)',
-        borderRadius: 5,
+        width: 250,
+        marginBottom: theme.spacing.unit * 4,
+        backgroundColor: "rgba(0,0,0,.78)",
+        borderRadius: 10,
+        borderWidth: 150,
         borderColor: '#000000',
 
     },
-};
+    icon: {
+        paddingBottom: 4,
+        // margin: theme.spacing.unit * 2,
+    },
+    iconHover: {
+        '&:hover': {
+            // color: 'green',
+            padding: 0.5
+        },
+    },
+    label: {
+        color: '#ffffff',
+        fontSize: '23px',
+    },
+});
 
 class BottomNavigationComponent extends React.Component {
     state = {
@@ -31,23 +38,24 @@ class BottomNavigationComponent extends React.Component {
     };
 
     handleChange = (event, value) => {
+        console.log('value',value);
         this.setState({ value });
     };
 
     render() {
-        const { classes } = this.props;
+        const { classes, toggleFilter, smallToBig} = this.props;
+        let aZ = smallToBig? 'a-z': 'z-a';
         const { value } = this.state;
 
         return (
             <BottomNavigation
-                value={value}
+                // value={value}
                 onChange={this.handleChange}
                 showLabels
                 className={classes.root}
             >
-                <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-                <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-                <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+                <BottomNavigationAction className={classes.label} label="Add Book" icon={<AddBookIcon className={classes.iconHover}/>} />
+                <BottomNavigationAction onClick={toggleFilter} className={classes.label} label={`Sorted by Title ${aZ}`} icon={<FavoriteIcon className={classes.iconHover}/>} />
             </BottomNavigation>
         );
     }

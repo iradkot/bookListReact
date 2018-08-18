@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import './BookList.css';
 import BookListDumb from '../../components/BookListDumb';
+//render books
+import BookListRender from './BookListRender'
 //redux
-import {addBook} from '../../state-manager/actions'
+import {addBook, setBooks} from '../../state-manager/actions'
 import {connect} from 'react-redux';
 import Grid from "@material-ui/core/Grid";
 //BottomNavigation
@@ -10,50 +12,63 @@ import BottomNavigation from '../../components/BottomNavigation';
 //Notifier
 import Notifier from "../../components/Notifier";
 import RenderBook from "../BookCard/BookCard1";
+import axios from "axios";
 
 class BookList extends Component {
     constructor(props) {
         super(props);
         this.state = {
             books: [],
-            count: 0
+            bookList: [],
+            count: 0,
+            smallToBig: true // for sorting
         }
+        this.getBooks = this.getBooks.bind(this);
+        this.toggleFilter = this.toggleFilter.bind(this);
+    }
+    async componentDidMount() {
+        this.getBooks();
     }
 
-    renderBooks(bookList) {
-        let books = [];
-        for (let book of bookList) {
-            //getting the data I choose from google books api.
-            let {id, volumeInfo} = book;
-            let {authors, title, imageLinks, publishedDate} = volumeInfo;
-            //here I check if the image exists in their db, if not set default pic
-            let smallThumbnail;
-            let thumbnail;
-            let images = [];
-            if (imageLinks) {
-                smallThumbnail = imageLinks.smallThumbnail ? imageLinks.smallThumbnail : '';
-                thumbnail = imageLinks.thumbnail ? imageLinks.thumbnail : '';
-                images.push({smallThumbnail, thumbnail})
-            }
-            // authors may be undefined
-            let newAuthors = authors ? authors : "not found";
-            books.push(
-                <RenderBook key={id} title={title} id={id} authors={newAuthors} images={images}
-                            publishedDate={publishedDate}/>
-            );
-        }
-        return books;
+    getBooks(event = false) {
+        let that = this;
+        let searchedItem = event && typeof event.target.value === "string" ? event.target.value : 'genetic algorithm';
+        axios.get(`https://www.googleapis.com/books/v1/volumes?q=${searchedItem}}`)
+            .then(function (response) {
+                // handle success
+                //the way to get the book from the object
+                that.setBooks(response);
+            })
+            .catch(function (error) {
+                // handle error
+                console.log(error);
+            })
     }
 
+    setBooks(response) {
+        let books = response.data.items;
+        // sometimes the item brings back data with no items, which means it didnt find anything
+        if (books) {
+            this.props.setBooks(books);
+        }
+        this.setState({bookList: books});
+    }
+
+    toggleFilter(){
+        this.setState({
+            smallToBig: !this.state.smallToBig
+        })
+    }
 
     render() {
-        const {bookList} = this.props;
+        const {bookList, smallToBig} = this.state;
+        console.log('bookList',bookList);
         return (
             <div style={{flexGrow: 1}}>
                 <Grid container spacing={0}>
                     <Notifier/>
                     <Grid container spacing={24} style={{margin: 24}}>
-                    {this.renderBooks(bookList)}
+                    < BookListRender bookList={bookList} smallToBig={smallToBig}/>
                     </Grid>
                     <div style={{position: "fixed", bottom: "0", width: "100%"}}>
                         <Grid
@@ -62,7 +77,7 @@ class BookList extends Component {
                             alignContent={"center"}
                             justify={'center'}
                         >
-                            <BottomNavigation/>
+                            <BottomNavigation toggleFilter={this.toggleFilter} smallToBig={smallToBig} />
                         </Grid>
                     </div>
                 </Grid>
@@ -76,7 +91,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-    addBook: (id, title, images) => dispatch(addBook((id, title, images)))
+    addBook: (id, title, images) => dispatch(addBook((id, title, images))),
+    setBooks: (books) => dispatch(setBooks(books))
 });
 
 export default connect(
