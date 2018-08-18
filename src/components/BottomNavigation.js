@@ -43,7 +43,7 @@ class BottomNavigationComponent extends React.Component {
     };
 
     render() {
-        const { classes, toggleFilter, smallToBig} = this.props;
+        const { classes, toggleFilter, smallToBig, addBook} = this.props;
         let aZ = smallToBig? 'a-z': 'z-a';
         const { value } = this.state;
 
@@ -54,7 +54,7 @@ class BottomNavigationComponent extends React.Component {
                 showLabels
                 className={classes.root}
             >
-                <BottomNavigationAction className={classes.label} label="Add Book" icon={<AddBookIcon className={classes.iconHover}/>} />
+                <BottomNavigationAction onClick={addBook} className={classes.label} label="Add Book" icon={<AddBookIcon className={classes.iconHover}/>} />
                 <BottomNavigationAction onClick={toggleFilter} className={classes.label} label={`Sorted by Title ${aZ}`} icon={<FavoriteIcon className={classes.iconHover}/>} />
             </BottomNavigation>
         );

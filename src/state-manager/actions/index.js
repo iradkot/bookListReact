@@ -4,11 +4,9 @@ export const setBooks = (bookList = []) => ({
     bookList
 })
 
-export const addBook = (id, title, authors, publishedDate, images) => ({
+export const addBook = (book) => ({
     type: 'ADD_Book',
-    id: id,
-    title,
-    images
+    book: book,
 });
 
 export const deleteBook = id => {

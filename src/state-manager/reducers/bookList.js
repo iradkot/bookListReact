@@ -1,15 +1,19 @@
+
+let count = 1;
+
 const bookList = (state = [], action) => {
     switch (action.type) {
         case 'SET_BOOKS':
         return action.bookList;
       case 'ADD_Book':
+          console.log('action:', action);
+          count+=1;
+          action.book.id += count;
+          state.push(action.book);
+          console.log('state:', state);
         return [
           ...state,
-          {
-            id: action.id,
-            title: action.title,
-            images: action.images,
-          }
+
         ];
       case 'EDIT_BOOK':
         return state.map(book => {

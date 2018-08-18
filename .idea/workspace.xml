@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="99c60d78-8868-499e-bc36-8d641ed8f477" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/BottomNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BottomNavigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/bookList/BookList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/bookList/BookList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state-manager/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-manager/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state-manager/reducers/bookList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/state-manager/reducers/bookList.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -36,13 +37,13 @@
           <entry key="Procfile" value="19" />
           <entry key="css" value="269" />
           <entry key="gitignore" value="1" />
-          <entry key="js" value="7952" />
+          <entry key="js" value="9726" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="269" />
-          <entry key="JavaScript" value="7952" />
+          <entry key="JavaScript" value="9726" />
           <entry key="PLAIN_TEXT" value="20" />
         </counts>
       </usages-collector>
@@ -50,16 +51,16 @@
         <counts>
           <entry key="Procfile" value="1" />
           <entry key="_netrc" value="1" />
-          <entry key="css" value="10" />
+          <entry key="css" value="11" />
           <entry key="gitignore" value="1" />
-          <entry key="js" value="57" />
+          <entry key="js" value="67" />
           <entry key="ts" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="10" />
-          <entry key="JavaScript" value="57" />
+          <entry key="CSS" value="11" />
+          <entry key="JavaScript" value="67" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="TypeScript" value="6" />
         </counts>
@@ -78,11 +79,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/BottomNavigation.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/screens/BookCard/BookCard1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="57" column="112" selection-start-line="57" selection-start-column="112" selection-end-line="57" selection-end-column="112" />
+            <state relative-caret-position="324">
+              <caret line="96" column="5" lean-forward="true" selection-start-line="63" selection-start-column="4" selection-end-line="96" selection-end-column="5" />
+              <folding>
+                <element signature="e#65#99#0" expanded="true" />
+                <element signature="e#164#200#0" expanded="true" />
+                <element signature="e#363#418#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/screens/bookList/BookList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="98" column="44" lean-forward="true" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
+              <folding>
+                <element signature="e#569#618#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modals/addBookModal/addBookModal.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -91,40 +118,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
+        <entry file="file://$PROJECT_DIR$/src/generalFuncs/validationFuncs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="115">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/screens/bookList/BookList.js">
+        <entry file="file://$PROJECT_DIR$/src/modals/editBookModal/editBookModal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="75" column="49" lean-forward="true" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/screens/bookList/BookListRender.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/screens/BookCard/CardView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+            <state relative-caret-position="-1281">
+              <caret line="21" column="20" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -141,36 +147,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>SignIn</find>
-      <find>classes</find>
-      <find>openSnackbar</find>
-      <find>console</find>
-      <find>classed</find>
-      <find>onAfterOpen</find>
-      <find>dateEdit</find>
-      <find>onChangeDate</find>
-      <find>Not</find>
-      <find>focus</find>
-      <find>-12</find>
-      <find>margin</find>
-      <find>BottomNavigation</find>
-      <find>publishedDate</find>
-      <find>SimpleBottomNavigation</find>
-      <find>deleteBook</find>
-      <find>proccess</find>
-      <find>_netrc</find>
-      <find>prod</find>
-      <find>spacing</find>
-      <find>them</find>
-      <find>red</find>
-      <find>icon</find>
-      <find>value</find>
-      <find>RestoreIcon</find>
-      <find>renderBooks</find>
       <find>books</find>
       <find>bookList</find>
       <find>setBooks</find>
       <find>r</find>
+      <find>SignIn</find>
+      <find>props</find>
+      <find>Modal</find>
+      <find>authorsEdit</find>
+      <find>AddBook</find>
+      <find>pops</find>
+      <find>onChangeDate</find>
+      <find>onChangeAuthors</find>
+      <find>this.dateEdit</find>
+      <find>cancel</find>
+      <find>closeModal</find>
+      <find>title</find>
+      <find>titleEdit</find>
+      <find>onChangeTitle</find>
+      <find>publishedDateErr</find>
+      <find>publishedDate</find>
+      <find>checkIfValidDate</find>
+      <find>go pops</find>
+      <find>bonus</find>
+      <find>checkTitleUnique</find>
+      <find>validateField</find>
+      <find>this.validateField('authors');</find>
+      <find>defaultValue</find>
+      <find>addBook</find>
+      <find>imageEdit</find>
+      <find>onChangeImage</find>
     </findStrings>
     <replaceStrings>
       <replace>BookListDumb</replace>
@@ -179,6 +185,8 @@
       <replace>BottomNavigationComponent</replace>
       <replace>process</replace>
       <replace>AddBookIcon</replace>
+      <replace>AddBook</replace>
+      <replace>shouldAdd</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\Users\עירד\Desktop\herolo\books_library\node_modules</dir>
@@ -198,11 +206,8 @@
         <option value="$PROJECT_DIR$/src/modals/editBookModal.js" />
         <option value="$PROJECT_DIR$/src/modals/editBookModal/editBookModal.css" />
         <option value="$PROJECT_DIR$/src/screens/BookCard/BookCard1.css" />
-        <option value="$PROJECT_DIR$/src/generalFuncs/validationFuncs.js" />
         <option value="$PROJECT_DIR$/src/generalFuncs/generalFuncs.js" />
         <option value="$PROJECT_DIR$/src/components/Notifier.js" />
-        <option value="$PROJECT_DIR$/src/state-manager/reducers/bookList.js" />
-        <option value="$PROJECT_DIR$/src/state-manager/actions/index.js" />
         <option value="$PROJECT_DIR$/src/modals/editBookModal/editBookModal.js" />
         <option value="$PROJECT_DIR$/src/screens/BookCard/BookCard1.js" />
         <option value="$PROJECT_DIR$/src/screens/bookList/BookList.css" />
@@ -211,10 +216,14 @@
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/screens/bookList/BookListRender.js" />
-        <option value="$PROJECT_DIR$/src/screens/bookList/BookList.js" />
         <option value="$PROJECT_DIR$/src/components/BottomNavigation.js" />
+        <option value="$PROJECT_DIR$/src/state-manager/actions/index.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/state-manager/reducers/bookList.js" />
+        <option value="$PROJECT_DIR$/src/generalFuncs/validationFuncs.js" />
+        <option value="$PROJECT_DIR$/src/modals/addBookModal/addBookModal.js" />
+        <option value="$PROJECT_DIR$/src/screens/bookList/BookList.js" />
       </list>
     </option>
   </component>
@@ -273,14 +282,27 @@
               <item name="books_library" type="b2602c69:ProjectViewProjectNode" />
               <item name="books_library" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="screens" type="462c0819:PsiDirectoryNode" />
+              <item name="modals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="books_library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="books_library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modals" type="462c0819:PsiDirectoryNode" />
+              <item name="addBookModal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="books_library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="books_library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="modals" type="462c0819:PsiDirectoryNode" />
+              <item name="editBookModal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="books_library" type="b2602c69:ProjectViewProjectNode" />
               <item name="books_library" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="screens" type="462c0819:PsiDirectoryNode" />
-              <item name="BookCard" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="books_library" type="b2602c69:ProjectViewProjectNode" />
@@ -288,6 +310,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="screens" type="462c0819:PsiDirectoryNode" />
               <item name="bookList" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="books_library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="books_library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="state-manager" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -305,6 +333,9 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\עירד\Desktop\herolo\books_library\src\modals\addBookModal" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\עירד\Desktop\herolo\books_library\src\modals\editBookModal" />
       <recent name="C:\Users\עירד\Desktop\herolo\books_library\src\screens" />
@@ -322,6 +353,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="addBookModal.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="addBookModal.js" working-dir="$PROJECT_DIR$/src/modals/addBookModal">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.addBookModal.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -338,25 +379,25 @@
       <workItem from="1534549131716" duration="7620000" />
       <workItem from="1534595174319" duration="4377000" />
       <workItem from="1534609399945" duration="2180000" />
-      <workItem from="1534614151158" duration="7335000" />
+      <workItem from="1534614151158" duration="15941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58051000" />
+    <option name="totallyTimeSpent" value="66657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19270833" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19270833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="TypeScript" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.16610739" />
-      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="bottom" id="Run" order="3" weight="1.0" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -364,7 +405,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32885906" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32885906" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -427,31 +468,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/state-manager/reducers/bookList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Notifier.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1196">
           <caret line="52" column="28" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/state-manager/actions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/generalFuncs/validationFuncs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="29" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -473,18 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/screens/BookCard/BookCard1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2208">
-          <caret line="100" column="29" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="29" />
-          <folding>
-            <element signature="e#65#99#0" expanded="true" />
-            <element signature="e#164#200#0" expanded="true" />
-            <element signature="e#363#418#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -523,13 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modals/editBookModal/editBookModal.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="110" column="25" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/BottomNavigation/BottomNavigation.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -543,43 +544,99 @@
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screens/BookCard/CardView.js">
+    <entry file="file://$PROJECT_DIR$/src/components/BottomNavigation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="401">
+          <caret line="59" column="10" lean-forward="true" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
+        <state relative-caret-position="23">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/state-manager/reducers/bookList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/state-manager/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modals/addBookModal/editBookModal.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screens/BookCard/CardView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/screens/bookList/BookListRender.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state relative-caret-position="254">
+          <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/screens/bookList/BookList.js">
+    <entry file="file://$PROJECT_DIR$/src/modals/editBookModal/editBookModal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="75" column="49" lean-forward="true" selection-start-line="75" selection-start-column="49" selection-end-line="75" selection-end-column="49" />
+        <state relative-caret-position="-1281">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BottomNavigation.js">
+    <entry file="file://$PROJECT_DIR$/src/screens/BookCard/BookCard1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="57" column="112" selection-start-line="57" selection-start-column="112" selection-end-line="57" selection-end-column="112" />
+        <state relative-caret-position="324">
+          <caret line="96" column="5" lean-forward="true" selection-start-line="63" selection-start-column="4" selection-end-line="96" selection-end-column="5" />
+          <folding>
+            <element signature="e#65#99#0" expanded="true" />
+            <element signature="e#164#200#0" expanded="true" />
+            <element signature="e#363#418#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generalFuncs/validationFuncs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modals/addBookModal/addBookModal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/screens/bookList/BookList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="98" column="44" lean-forward="true" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
+          <folding>
+            <element signature="e#569#618#0" expanded="true" />
           </folding>
         </state>
       </provider>
