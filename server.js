@@ -16,7 +16,8 @@ if(!dev){
     app.use(morgan('common'));
 
     app.use(express.static(path.resolve(__dirname, 'build')));
-
+    console.log('__dirname',__dirname);
+    console.log('__dirname',__dirname);
     app.get('*', (req,res) =>{
         res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
     })
