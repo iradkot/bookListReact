@@ -99,6 +99,8 @@ class BookCard1 extends Component {
     delete() {
         let {id} = this.props;
         this.props.deleteBook(id);
+        let {title} = this.state;
+        openSnackbar({ message:`Successfully deleted book: ${title} `});
     }
 
     afterOpenModal() {

@@ -86,8 +86,6 @@ class BookList extends Component {
         this.setState({
             showAddBookModal: false
         })
-        console.log('closed?');
-
     }
 
 
