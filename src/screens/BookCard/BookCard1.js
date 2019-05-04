@@ -62,6 +62,7 @@ class BookCard1 extends Component {
     }
 
     edit() {
+        debugger;
         let {fieldsValidation, title, authors, publishedDate} = this.state;
         for (let item in this.state.fieldsValidation) {
             if (fieldsValidation[item]) {
@@ -84,12 +85,10 @@ class BookCard1 extends Component {
             shouldUpdate = true;
         }
         if (shouldUpdate) {
-            console.log("BookCard should update:", this.props);
             let {id, title} = this.props;
             this.props.editBook(id, updatedFieldsObj);
             this.closeModal();
             let chagedFields = Object.keys(updatedFieldsObj);
-
             openSnackbar({ message:`Successfully changed book: ${title} following fields: ${chagedFields.map(key=> key + ' ')}`});
         }
         // if(title!==this.props.)
@@ -120,8 +119,9 @@ class BookCard1 extends Component {
     };
 
     onChangeAuthors(event) {
-        let authors = event.target.value;
-        this.setState({authors}, () => {
+        // let authors = event.target.value;
+        const { target: { value } } = event;
+        this.setState({authors: value}, () => {
             this.validateField('authors');
         });
     };
@@ -172,7 +172,7 @@ class BookCard1 extends Component {
 
     render() {
         let {appLoaded, title, authors, publishedDate, fieldsValidation} = this.state;
-        let authorsToStr = authorsArrToString(authors);
+        let authorsToStr = authorsArrToString(this.props.authors);
         return (
             <CardView
                 {...this.props}
