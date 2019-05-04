@@ -16,7 +16,7 @@ import {checkIfValidDate} from "../../generalFuncs/validationFuncs";
 
 
 
-function SignIn(props) {
+const editBookModal = props => {
     const { classes } = props;
     const {authorsEdit, titleEdit, onChangeTitle, onChangeAuthors, onChangeDate, fieldsValidation, validateField} = props.props;
     checkIfValidDate(props.props.publishedDate);
@@ -139,8 +139,8 @@ const styles = theme => ({
         marginTop: theme.spacing.unit * 3,
     }
 });
-SignIn.propTypes = {
+editBookModal.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(SignIn);
+export default withStyles(styles)(editBookModal);
